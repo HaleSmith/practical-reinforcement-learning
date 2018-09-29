@@ -1,0 +1,23 @@
+# Python installation for coursera rl course (on Ubuntu)
+
+
+apt-get install -y python-numpy python-dev cmake zlib1g-dev libjpeg-dev xvfb ffmpeg xorg-dev python-opengl libboost-all-dev libsdl2-dev swig
+
+source activate rl
+pip install --upgrade pip
+pip install 'gym[all]'
+
+pip install keras
+
+# tensorflow
+pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.10.1-cp36-cp36m-linux_x86_64.whl
+
+# pytorch 
+conda install pytorch torchvision -c pytorch
+
+# Lasagne and Theano
+pip install --upgrade https://github.com/Theano/Theano/archive/master.zip
+pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
+
+# AgentNet
+pip install --upgrade https://github.com/yandexdataschool/AgentNet/archive/master.zip
